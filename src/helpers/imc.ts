@@ -3,6 +3,7 @@ export type Level = {
     color:string
     icon:string
     imc : number[]
+    yourImc?:number
 
 }
 export const levels:Level[] = [
@@ -15,5 +16,18 @@ export const levels:Level[] = [
 
 export const calculateImc =(heigth:number,weigth:number)=>{
     const imc =  weigth/ (heigth* heigth)
+
+    //for para mapear e ver em faixa se enquadra o imc
+
+    for(let i in levels){
+        if(imc >= levels[i].imc[0] && imc <= levels[i].imc[1]){
+            levels[i].yourImc = imc
+            return levels[i]
+
+        }
+
+    }
+
+    return null
 
 }

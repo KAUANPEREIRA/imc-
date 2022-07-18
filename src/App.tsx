@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 import React, { useState } from 'react';
 import logo from './assets/powered.png';
+import {levels,calculateImc} from './helpers/imc'
 
 
 function App() {
