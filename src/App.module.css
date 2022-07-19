@@ -74,7 +74,19 @@ outline:0;
 .rigthSide{
     flex:1;
     margin-left:40px;
+    display:flex;
 }
+
+.grid{
+    flex:1; /* flex:1 pegar toda a area disponivel*/
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px; /*espaço entre uma propiedade e outra*/
+
+
+}
+
+
 
 
 

@@ -60,7 +60,17 @@ function App() {
       </div>
 
       <div className={styles.rigthSide}>
-        ... direita
+        <div className={styles.grid}>
+          {levels.map((item,index)=>{
+            return (
+              <>
+              <div key={index}>{item.title}</div>
+              
+              </>
+            )
+          })}
+
+        </div>
       </div>
 
     </div>
