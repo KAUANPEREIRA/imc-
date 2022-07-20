@@ -7,6 +7,10 @@ body{
     
 }
 
+.main{
+    padding-bottom:50px;
+}
+
 .headerContainer{
     max-width:900px;
     margin:40px auto;
@@ -106,6 +110,41 @@ outline:0;
     cursor:pointer;
     margin-left:-35px;
     margin-top:145px;
+
+}
+
+/*toda responsividade ficara aqui no appModule.css*/
+
+@media (max-width:770px){
+    header{
+        padding:0 20px;
+    }
+    .container{
+        padding:0 20px;
+        flex-direction:column;
+    }
+
+    .leftSide{
+        margin-left:0;
+    }
+
+    .rigthSide{
+        margin-left:0;
+        margin-top:50px;
+    }
+
+    .rigthSideArrow{
+        margin-left:0;
+        margin-top:0;
+        border-radius:10px;
+    }
+
+}
+
+@media (max-width:430px){
+    .grid{
+        grid-template-columns:1fr;
+    }
 
 }
 
