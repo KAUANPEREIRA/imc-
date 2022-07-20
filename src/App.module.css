@@ -87,6 +87,28 @@ outline:0;
 }
 
 
+.rigthSideBig{
+    flex:1; /*pega todo espaço disponivel*/
+    display:flex;
+
+}
+
+.rigthSideArrow{
+    position:absolute; /*para deixar flutuante*/
+    background-color:#227c9d;
+    width:70px;
+    heigth:70px;
+    border-radius:35px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    margin-left:-35px;
+    margin-top:145px;
+
+}
+
 
 
 

@@ -21,8 +21,11 @@ export const calculateImc =(heigth:number,weigth:number)=>{
 
     for(let i in levels){
         if(imc >= levels[i].imc[0] && imc <= levels[i].imc[1]){
-            levels[i].yourImc = imc
-            return levels[i]
+            let levelCopy = {...levels[i]}
+
+            levelCopy.yourImc = parseFloat(imc.toFixed(2))//transformando em numero apos usar o
+            //to fixed parseFloat()
+            return levelCopy
 
         }
 
